@@ -17,7 +17,7 @@ module.exports = {
   output: {
       filename: "index.js",
       path: path.resolve(__dirname, "static/frontend"),
-      publicPath: "/static/frontend/"
+      publicPath: "frontend/static/frontend/"
   },
   module: {
       rules: [
