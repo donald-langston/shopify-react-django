@@ -18,7 +18,7 @@ environ.Env.read_env()
 
 stripe.api_key = env('STRIPE_API_KEY')
 
-
+@ensure_csrf_cookie
 def get_products(request):
     all_products = Product.objects.all()
     if not all_products:
