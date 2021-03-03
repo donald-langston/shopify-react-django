@@ -1,0 +1,16 @@
+.popover-body {
+    border-bottom: 1px solid black;
+}
+
+#cart-buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-buttons-container button {
+    background-color: cadetblue;
+}
+
+#cart-button:focus {
+    outline: none;
+}
