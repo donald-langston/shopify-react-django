@@ -18,7 +18,7 @@ function Product() {
   
   useEffect(() => {
     async function fetchData() {
-      const response = await axios.get("http://localhost:8000/shop/get_products");
+      const response = await axios.get("https://langston-shopapp.herokuapp.com/shop/get_products");
       console.log(response.data);
       setProducts(response.data.map(product => {
           return {

@@ -47,7 +47,7 @@ function CheckoutForm() {
                   }
                       
                   axios.defaults.headers['X-CSRFToken'] = csrftoken;
-                  const response = await axios.post("http://localhost:8000/shop/secret/", 
+                  const response = await axios.post("https://langston-shopapp.herokuapp.com/shop/secret/", 
                   qs.stringify({products: productsInCart, email: values.email, csrfmiddlewaretoken: csrftoken, length: productsInCart.length}),
                   {withCredentials: true});
           
