@@ -81,7 +81,6 @@ function CheckoutForm() {
               
                   if (result.error) {
                   // Show error to your customer (e.g., insufficient funds)
-                  console.log(result.error.message);
                   dispatch({type: "product/cardError", payload: {cardError: result.error.message}});
                   setSubmitting(false);
                   } else {

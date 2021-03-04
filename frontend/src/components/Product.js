@@ -19,7 +19,6 @@ function Product() {
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get("https://langston-shopapp.herokuapp.com/shop/get_products");
-      console.log(response.data);
       setProducts(response.data.map(product => {
           return {
               ...product,
