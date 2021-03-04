@@ -17,6 +17,7 @@ env = environ.Env()
 environ.Env.read_env()
 
 stripe.api_key = env('STRIPE_API_KEY')
+endpoint_secret = env('ENDPOINT_SECRET')
 
 @ensure_csrf_cookie
 def get_products(request):
