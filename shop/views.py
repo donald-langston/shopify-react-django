@@ -62,11 +62,13 @@ def secret(request):
 @csrf_exempt
 def my_webhook_view(request):
     payload = request.body
+    print(payload)
     sig_header = request.META['HTTP_STRIPE_SIGNATURE']
+    print(sig_header)
     event = None
 
     try:
-        event = stripe.Event.construct_event(
+        event = stripe.Webhook.construct_event(
             payload, sig_header, endpoint_secret
         )
     except ValueError as e:
