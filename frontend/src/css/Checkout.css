@@ -85,4 +85,8 @@
     .total-container {
         margin: 0 2%;
     }
+
+    #checkout-main-container + footer {
+        position: relative;
+    }
   }
