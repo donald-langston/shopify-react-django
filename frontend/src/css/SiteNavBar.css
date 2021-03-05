@@ -15,11 +15,11 @@
     outline: none;
 }
 
-navbar {
+.navbar {
     justify-content: flex-end;
 }
 
-navbar a {
+.navbar a {
     margin-right: auto;
 }
 
