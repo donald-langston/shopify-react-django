@@ -14,3 +14,15 @@
 #cart-button:focus {
     outline: none;
 }
+
+navbar {
+    justify-content: flex-end;
+}
+
+navbar a {
+    margin-right: auto;
+}
+
+#cart-button {
+    margin-left: 1%;
+}
