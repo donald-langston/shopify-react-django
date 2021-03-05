@@ -37,7 +37,7 @@ function Checkout() {
 
   
   return (
-    <div>
+    <div id="checkout-main-container">
     {cardError ? <Alert variant="warning" onClose={() => {dispatch({type: "product/clearCardError"})}} dismissible>{cardError}</Alert> : ""}
       <div className="checkout-container">
         <div className="summary-container">
